@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+<h1> PRUEBA INICIO DE SESION </h1>
+
+
+
+
+
+<script>
+
+
+function imprimir(frase){
+
+    document.write(frase);
+    document.write ("<br>");
+}
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+var contador = 1
+var intentos = 3
+
+while(contador <= intentos ){
+
+    if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        imprimir("Bienvenido " + inicioDeSesionIngresado);
+        
+        break;
+
+        
+
+    } else {
+        alert("inicio de sesión inválido. Favor intente de nuevo");
+
+        prompt("Ingrese su usuario");
+        prompt("Ingrese su contraseña");
+
+    }
+
+    contador++
+    
+   
+}
+
+
+imprimir ("fin")
+
+
+</script>
